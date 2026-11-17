@@ -1,44 +1,26 @@
-# Estudando-em-lofica-de-programacao
-Algoritmo "Comando de repeticao do repita"
-Var
-   sexo, cor, continuar: caractere
-   idade, quantidade, quantidade_fem: inteiro
-Inicio
-   quantidade <- 0
-   quantidade_fem <- 0
+# Estudos de Lógica de Programação — Visualg
 
-   repita
-      escreva("Sexo (M ou F): ")
-      leia(sexo)
+**Autor:** Kaiky Yoshio Ono Marins  
+**Categoria:** Lógica de programação · Algoritmos  
+**Status:** Exercício introdutório
 
-      escreva("Coloque sua idade: ")
-      leia(idade)
+## Visão geral
 
-      escreva("Cor de cabelo (loiro, preto, castanho, ruivo): ")
-      leia(cor)
+Exercício de lógica de programação escrito em Visualg. O algoritmo utiliza uma estrutura de repetição `repita` para ler dados informados pelo usuário e contar ocorrências que atendem a condições específicas.
 
-      se sexo = "M" entao
-         se idade > 18 entao
-            se cor = "castanho" entao
-               quantidade <- quantidade + 1
-            fimse
-         fimse
-      fimse
+## Conceitos praticados
 
-      se sexo = "F" entao
-         se (idade >= 20) e (idade <= 25) entao
-            se cor = "ruivo" entao
-               quantidade_fem <- quantidade_fem + 1
-            fimse
-         fimse
-      fimse
+- Leitura de dados e variáveis.
+- Estrutura de repetição `repita ... ate`.
+- Condicionais aninhadas com `se ... entao`.
+- Operadores relacionais e contadores.
 
-      escreva("Quer continuar? (S/N): ")
-      leia(continuar)
+## Regra do exercício
 
-   ate continuar = "N"
+O algoritmo contabiliza homens com mais de 18 anos e cabelo castanho, além de mulheres entre 20 e 25 anos com cabelo ruivo. Os resultados são apresentados ao encerrar a repetição.
 
-   escreval("Quantidade de mulheres entre 20 e 25 anos com cabelo ruivo: ", quantidade_fem)
-   escreval("Quantidade de homens acima de 18 anos com cabelo castanho: ", quantidade)
+## Material
 
-Fimalgoritmo
+O algoritmo original está preservado em [MATERIAL-ORIGINAL.txt](./MATERIAL-ORIGINAL.txt). Abra o conteúdo em um ambiente compatível com Visualg para testar.
+
+© 2026 Kaiky Yoshio Ono Marins.
