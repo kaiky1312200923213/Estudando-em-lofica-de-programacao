@@ -1,0 +1,52 @@
+MATERIAL ORIGINAL PRESERVADO
+
+Este arquivo guarda o conteúdo que antes estava no README.md. Ele foi preservado para manter os exemplos e anotações originais acessíveis durante a organização do portfólio.
+
+IMPORTANTE: valores que pareciam chaves de API foram substituídos por SUA_CHAVE_NVIDIA_AQUI. Use variáveis de ambiente para credenciais e nunca publique tokens.
+
+--- CONTEÚDO ANTERIOR ---
+
+# Estudando-em-lofica-de-programacao
+Algoritmo "Comando de repeticao do repita"
+Var
+   sexo, cor, continuar: caractere
+   idade, quantidade, quantidade_fem: inteiro
+Inicio
+   quantidade <- 0
+   quantidade_fem <- 0
+
+   repita
+      escreva("Sexo (M ou F): ")
+      leia(sexo)
+
+      escreva("Coloque sua idade: ")
+      leia(idade)
+
+      escreva("Cor de cabelo (loiro, preto, castanho, ruivo): ")
+      leia(cor)
+
+      se sexo = "M" entao
+         se idade > 18 entao
+            se cor = "castanho" entao
+               quantidade <- quantidade + 1
+            fimse
+         fimse
+      fimse
+
+      se sexo = "F" entao
+         se (idade >= 20) e (idade <= 25) entao
+            se cor = "ruivo" entao
+               quantidade_fem <- quantidade_fem + 1
+            fimse
+         fimse
+      fimse
+
+      escreva("Quer continuar? (S/N): ")
+      leia(continuar)
+
+   ate continuar = "N"
+
+   escreval("Quantidade de mulheres entre 20 e 25 anos com cabelo ruivo: ", quantidade_fem)
+   escreval("Quantidade de homens acima de 18 anos com cabelo castanho: ", quantidade)
+
+Fimalgoritmo
